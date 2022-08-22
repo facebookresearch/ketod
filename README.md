@@ -6,27 +6,26 @@ This repo contains the dataset from NAACL 2022 paper "KETOD: Knowledge-Enriched 
 ## Dataset Generation
 KETOD is built upon the google SGD dataset. Here we release our knowledge-enriched utterances annotations and the script to generate the final dataset. 
 
-```
 1. Go to <https://github.com/google-research-datasets/dstc8-schema-guided-dialogue> to download the SGD dataset. 
 2. Unzip ketod_release.zip and put with the SGD dataset in the same directory. 
 3. Edit the main entry of gen_ketod_data.py to set up your own data paths. 
 4. Run 'python gen_ketod_data.py' to generate the full KETOD dataset. 
-```
+
 
 ## Dataset Format
 
 Each entry of the data is one dialogue. It has the following fields:
 ```
-"dialogue_id": unique id of the dialogue
+"dialogue_id": unique id of the dialogue.
 
 "turns": the list of dialogue turns. Besides the original fields in the SGD dataset, if it is an enriched turn, then we have the following additional fields:
-  {
-    "enrich": True
-    "entity_query": The entity query we use to do knowledge retrieval
-    "enriched_utter": The utterance enriched with chitchat
-    "kg_snippets": the index of the knowledge snippets
-    "kg_snippets_text": the context of the knowledge snippets
-  }
+    {
+      "enrich": True. For turns without chitchat enrichment, this field is False. 
+      "entity_query": The entity query we use to do knowledge retrieval.
+      "enriched_utter": The utterance enriched with chitchat. Another field 'utterance' is the original response in the SGD dataset.
+      "kg_snippets": the index of the ground truth knowledge snippets
+      "kg_snippets_text": the content of the ground truth knowledge snippets
+    }
   
 "dialog_query": all the entity queries we use to do knowledge retrieval in this dialog
 
