@@ -62,4 +62,5 @@ If you find this project useful, please cite it using the following format
 }
 ```
 
-
+## License
+KETOD is released under MIT license, see [LICENSE](https://github.com/facebookresearch/ketod/blob/main/LICENSE) for details.
