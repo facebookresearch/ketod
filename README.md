@@ -1,4 +1,4 @@
-# The KETOD dataset
+# KETOD: Knowledge-Enriched Task-Oriented Dialogue
 
 This repo contains the dataset from NAACL 2022 paper "KETOD: Knowledge-Enriched Task-Oriented Dialogue"
 <https://arxiv.org/abs/2205.05589>
@@ -33,6 +33,13 @@ Each entry of the data is one dialogue. It has the following fields:
 
 "entity_passage_sents": all the wikipedia passages retrieved in this dialog, breaked into snippets associated with index numbers
 ```
+
+## Code
+To run the model, go to the "code" folder. 
+
+To run the knowledge selection model, go to "kg_selection" folder: run process_data.py first, then train the model with Train.py, generate the kg selection results with Test.py, for all train, dev, and test sets. 
+
+To run the SimpleToDPlus model, go to "simpletodplus" folder: run gen_kg_train.py to generate data files with the kg selection results. Then run gen_data.py to generate train/dev/test files for the model input formats. Using the run_simpletod.sh script, run train_simpletod.py for training, and test_simpletod_simple.py for testing. You need to modify and follow the steps at the end of the test_simpletod_simple.py file to generate the results for each step. 
 
 ## Citation
 If you find this project useful, please cite it using the following format
