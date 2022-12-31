@@ -39,7 +39,7 @@ To run the model, go to the "code" folder.
 
 To run the knowledge selection model, go to "kg_selection" folder: run process_data.py first, then train the model with Train.py, generate the kg selection results with Test.py, for all train, dev, and test sets. 
 
-To run the SimpleToDPlus model, go to "simpletodplus" folder: run gen_kg_train.py to generate data files with the kg selection results. Then run gen_data.py to generate train/dev/test files for the model input formats. Using the run_simpletod.sh script, run train_simpletod.py for training, and test_simpletod_simple.py for testing. You need to modify and follow the steps at the end of the test_simpletod_simple.py file to generate the results for each step. 
+To run the SimpleToDPlus model, go to "simpletodplus" folder: modify and run gen_kg_train.py to generate data files with the kg selection results. Then run gen_data.py to generate train/dev/test files for the model input formats. Using the run_simpletod.sh script, run train_simpletod.py for training, and test_simpletod_simple.py for testing. You need to modify and follow the steps at the end of the test_simpletod_simple.py file to generate the results for each step. 
 
 ## Citation
 If you find this project useful, please cite it using the following format
