@@ -1,3 +1,4 @@
+# Copyright (c) Meta Platforms, Inc. and its affiliates.
 def write_log(log_file, s):
     print(s)
     with open(log_file, "a") as f:

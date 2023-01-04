@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# Copyright (c) Meta Platforms, Inc. and its affiliates.
 """
 Main script
 """

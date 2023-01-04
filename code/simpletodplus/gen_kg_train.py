@@ -1,3 +1,4 @@
+# Copyright (c) Meta Platforms, Inc. and its affiliates.
 import json
 from tqdm import tqdm
 

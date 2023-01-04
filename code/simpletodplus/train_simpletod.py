@@ -1,3 +1,4 @@
+# Copyright (c) Meta Platforms, Inc. and its affiliates.
 # Training simpleToD LM
 
 from transformers import GPT2LMHeadModel, GPT2Tokenizer

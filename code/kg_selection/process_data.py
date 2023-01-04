@@ -1,3 +1,5 @@
+# Copyright (c) Meta Platforms, Inc. and its affiliates.
+
 # generate non-delex data
 
 import json

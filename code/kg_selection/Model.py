@@ -1,3 +1,5 @@
+# Copyright (c) Meta Platforms, Inc. and its affiliates.
+
 import torch
 from torch import nn
 from config import parameters as conf
